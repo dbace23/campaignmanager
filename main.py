@@ -30,7 +30,7 @@ d = {
 }
 
 # global library here
-@st.cache_data(show_spinner=False)
+#@st.cache_data(show_spinner=False)
 def load_auth():
     # useraccess
     users_id = pd.read_csv('login.csv')
