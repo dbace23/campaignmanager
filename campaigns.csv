@@ -1,0 +1,2 @@
+,campaign_id,campaign_name,start_date,end_date,start_time,end_time,campaign_details,campaign_total_budget,created_by_userid,created_by_username,project_details,created_at,approval,approved_by_userid,approved_by_username,approved_at,deleted_by,deleted_at,edited_by,edited_at,notes
+0,2lHWV,ramadhan,2024-09-15,2024-10-15,09:00:00,09:00:00,testing lalala,34,2,tangankanan,testing lalala,2024-09-15 11:31:39.331622,True,1.0,bigbos,2024-09-15 11:41:59.865462,,,,,notes

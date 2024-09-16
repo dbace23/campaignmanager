@@ -1,0 +1,4 @@
+id,name,divisi,email,password,activity,create,approval,approval2
+1,bigbos,controller,bigbos,123,,,"2,",
+2,smallbos,marketing head,smallbos,123,,campaigns,"3,5,6",
+3,anak,sub head,anak,123,,activities,0,
