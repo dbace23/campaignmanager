@@ -30,7 +30,7 @@ d = {
 }
 
 # global library here
-#@st.cache_data(show_spinner=False)
+@st.cache_data(show_spinner=False)
 def load_auth():
     # useraccess
     users_id = pd.read_csv('login.csv')
@@ -56,11 +56,9 @@ credentials = {
     }
 }
 authenticator = stauth.Authenticate(
-    usernames=d["usernames"],               
-    names=d["names"],                    
-    passwords=d["hashed_passwords"],    
+    credentials=credentials,
     cookie_name='astromarketing',
-    key="astro_keys21",
+    cookie_key="astro_keys21",
     cookie_expiry_days=360
 )
 # Authentication
