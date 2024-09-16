@@ -57,8 +57,8 @@ credentials = {
 }
 authenticator = stauth.Authenticate(
     credentials,
-    'astromarketing',
-    "astro_keys21",
+    cookie_name='astromarketing',
+    key="astro_keys21",
     cookie_expiry_days=360
 )
 # Authentication
