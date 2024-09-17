@@ -52,12 +52,12 @@ def main_page(user_id,name,division,activity,create,approving):
                 campaigns,approvedbudget,approvedgoals=load_data_approved_activities()
                 activitiesdf,error = load_data_activities()
                 if error=="200": 
-                    appovalbutton =activity_table(user_id,name,division,activity,create,approving,activitiesdf,campaigns)
-                
-                    if 'activities' in str(create) and not appovalbutton:
-                        if st.button('Create New Activity'):
-                            st.session_state['main_page'] = 'Create New Activity'
-                            st.rerun()
+                    appovalbutton,apc =activity_table(user_id,name,division,activity,create,approving,activitiesdf,campaigns)
+                    if apc:
+                      if 'activities' in str(create) and not appovalbutton:
+                          if st.button('Create New Activity'):
+                              st.session_state['main_page'] = 'Create New Activity'
+                              st.rerun()
                 else:
                     st.error(error)
             
