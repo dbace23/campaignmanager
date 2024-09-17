@@ -16,6 +16,7 @@ def activity_table(user_id,name,division,activity,create,approving,activitiesdf,
     
     if len(campaign_names)==0: #check if there's approved items
         st.write("No campaigns available.")
+        apc=False
     else:
         selected_campaign = st.selectbox('Filter by Campaign', ['All'] + list(campaign_names))
         actcols=st.columns([1,1,1])
@@ -105,4 +106,4 @@ def activity_table(user_id,name,division,activity,create,approving,activitiesdf,
                         update_activity_button_p(selected_activity_id,notesdariapproval,approval,user_id,name)
                         st.rerun()
         except Exception as e:pass
-        return approvalbutton
+        return approvalbutton,apc
