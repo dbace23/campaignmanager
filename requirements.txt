@@ -8,7 +8,6 @@ cryptography==43.0.1
 docutils==0.21.2
 filelock==3.16.0
 h2==4.1.0
-HTMLParser==0.0.2
 ipython==8.12.3
 ipywidgets==8.1.5
 jnius==1.1.0
@@ -25,8 +24,6 @@ simplejson==3.19.3
 Sphinx==8.0.2
 streamlit==1.38.0
 streamlit_authenticator==0.3.3
-thread==2.0.5
 urllib3_secure_extra==0.1.0
-xmlrpclib==1.0.1
 zstandard==0.23.0
-numpy==1.22.0
+numpy>=1.22.0
