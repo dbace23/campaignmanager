@@ -18,6 +18,7 @@ def activity_table(user_id,name,division,activity,create,approving,activitiesdf,
         st.write("No campaigns available.")
         apc=False
     else:
+        apc=True
         selected_campaign = st.selectbox('Filter by Campaign', ['All'] + list(campaign_names))
         actcols=st.columns([1,1,1])
         with actcols[0]:activity_status=st.selectbox('activity status',('all','pending approving','rejected','ongoing','ended'))
