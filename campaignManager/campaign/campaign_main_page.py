@@ -8,7 +8,7 @@ from campaignManager.query.query import *
 
 def campaign_table(user_id,name,division,activity,create,approving,campaignsdf):
     st.title("Campaign Manager")
-  
+    
     if campaignsdf.empty:
         st.write("No campaigns available.")
         selectmodecampaign = False

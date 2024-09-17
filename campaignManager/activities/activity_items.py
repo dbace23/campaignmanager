@@ -714,6 +714,7 @@ def activityitem(user_id,name,division,campaigns,approvedbudget,approvedgoals):
                 clear_budgets()
                 save_activity(activitydf,goals_df,utmdf,promodf,kvdf)
                 st.session_state['main_page'] = 'Activities'
+                st.session_state['dynamic_menu'] = ['Activities','Campaigns','UTM','Promos','KV','Reports']
                 st.rerun()
     with col2:
         if st.button('Cancel  Activity'):
@@ -724,6 +725,7 @@ def activityitem(user_id,name,division,campaigns,approvedbudget,approvedgoals):
             clear_goals()
             clear_budgets()
             st.session_state['main_page'] = 'Activities'
+            st.session_state['dynamic_menu'] = ['Activities','Campaigns','UTM','Promos','KV','Reports']
             st.rerun()
  
 

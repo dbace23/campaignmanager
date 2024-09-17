@@ -101,3 +101,9 @@ def  update_activity_button_p(selected_activity_id,notes,approval,user_id,name):
     activitydf.loc[activitydf['activity_id'] == selected_activity_id, 'approved_at'] = now
 
     activitydf.to_csv('activity.csv')
+
+#utm
+
+def load_utm():
+    utmdf=pd.read_csv('utm.csv')
+    return utmdf
