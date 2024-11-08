@@ -3,8 +3,13 @@ from datetime import date, timedelta, datetime
 from campaignManager.utils.utils import *
 from campaignManager.query.query import *
 
+def open_url(url):
+    st.markdown(f'<a href="{url}" target="_self">Click here to go to {url}</a>', unsafe_allow_html=True)
+
 def activity_table(user_id,name,division,activity,create,approving,activitiesdf,campaigns):
     st.title("Activities Manager")
+    if st.button("redirection button"):
+        open_url("https://astroid.link/testredirect")
      
     campaigns=campaigns[(campaigns['approval'] == True) & (campaigns['end_date'] > pd.Timestamp(date.today()))]    #cara load campaigns with this condition
  
